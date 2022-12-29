@@ -10,7 +10,7 @@ public interface UserService {
 	User saveUser(User user);
 	
 	//get all User
-	List<User> getallUser();
+	List<User> getAllUser();
 	
 	//get single user with given id
 	User getUser(String userId);
