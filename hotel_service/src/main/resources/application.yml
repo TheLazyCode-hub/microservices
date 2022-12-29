@@ -11,7 +11,7 @@
        ddl-auto: update
      show-sql: true
    application:
-     name: HOTEL_SERVICE
+     name: HOTEL-SERVICE
  eureka:
    client:
      fetch-registry: true
