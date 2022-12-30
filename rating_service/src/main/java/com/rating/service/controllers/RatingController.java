@@ -37,12 +37,12 @@ public class RatingController {
 	//get by user id
 	@GetMapping("/user/{userId}")
 	public ResponseEntity<List<Rating>> getAllByUserId(@PathVariable String userId){
-		return ResponseEntity.status(HttpStatus.FOUND).body(ratingService.getAllByUserId(userId));
+		return ResponseEntity.status(HttpStatus.OK).body(ratingService.getAllByUserId(userId));
 	}
 	
 	//get by hotel id
 	@GetMapping("/hotel/{hotelId}")
 	public ResponseEntity<List<Rating>> getAllByHotelId(@PathVariable String hotelId){
-		return ResponseEntity.status(HttpStatus.FOUND).body(ratingService.getAllByHotelId(hotelId));
+		return ResponseEntity.status(HttpStatus.OK).body(ratingService.getAllByHotelId(hotelId));
 	}
 }

@@ -36,6 +36,6 @@ public class HotelController {
 	//get by id api
 	@GetMapping("/{hotelId}")
 	public ResponseEntity<Hotel> getHotelById(@PathVariable String hotelId){
-		return ResponseEntity.status(HttpStatus.FOUND).body(hotelService.getById(hotelId));
+		return ResponseEntity.status(HttpStatus.OK).body(hotelService.getById(hotelId));
 	}
 }
